@@ -13,16 +13,16 @@
 }
 .title{
   color: rgb(18, 18, 18);
-  font-size: 2.75rem;
+  font-size: 35px;
   font-weight: 700;
-  line-height: 3.5rem;
+  line-height: 40px;
   text-align: center;
   margin-bottom: 1.25rem;
 }
 .title2{
   color: rgb(18, 18, 18);
 font-family: Poppins;
-font-size: 1.5rem;
+font-size: 18px;
 font-weight: 600;
 line-height: 2.25rem;
 letter-spacing: 0%;
@@ -30,19 +30,20 @@ text-align: left;
 }
 .heading{
   color: rgb(255, 255, 255);
-font-size: 4rem;
-font-weight: 700;
-line-height: 5rem;
-text-align: center;
-margin-bottom: 1.25rem;
+  font-size: 65px;
+  font-weight: 700;
+  line-height: 79px;
+  text-align: center;
+  margin-bottom: 20px;
 }
 .para{
   color: rgb(112, 112, 112);
-font-size: 1rem;
+font-size: 16px;
 font-weight: 400;
 line-height: 1.75rem;
 text-align: center;
 margin-bottom: 2.25rem;
+max-width: 700px;
 }
 .btn{
   color: rgb(255, 255, 255);
@@ -84,12 +85,59 @@ header .banner{
 /* banner section ends */
 /* donation section starts */
 .donation{
-  
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 80px auto;
+  padding: 20px;
 }
 .amount-selector{
-  
+  display: flex;
+  padding: 20px 25px;
+  height: 123px;
+  width: 135px;
+  border-radius: 5px;
+  background: rgb(250, 250, 250);
+  color: rgb(112, 112, 112);
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 36px;
+  text-align: center;
+  border: 2px solid rgb(191, 191, 191);
+}
+.amounts{
+  flex-wrap: wrap;
+  display: flex;
+  gap: 20px;
+  margin-bottom: 20px;
+  transition: all .2s linear;
+  justify-content: center;
+  align-items: center;
 }
 
+.amount-selector:hover{
+  border: 2px solid rgb(255, 89, 89);
+  border-radius: 5px;
+  background: rgb(255, 238, 238);
+  color: rgb(255, 89, 89);
+}
+
+.amount-area{
+  width: 40%;
+  margin: 30px;
+
+}
+.amount-area input{
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 0px 34%;
+  border: none;
+}
+
+.amount-area input:focus{
+  outline: none;
+}
 /* donation section ends */
 .hide{
   display: none;
@@ -103,8 +151,11 @@ header .banner{
   header{
     padding: 4rem 2rem;
 }
-
-
+/* header section ends */
+.amount-selector{
+  font-size: 25px;
+}
+/* donation section ends */
 
 
 
@@ -118,5 +169,8 @@ header .banner{
   header{
     padding: 6rem 5rem;
 }
+/* header section ends */
+
+
 
 }
