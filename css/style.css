@@ -60,7 +60,9 @@ transition: all .2s linear;
   color: rgb(255, 89, 89);
   background: rgb(255, 255, 255);
 }
-
+.left{
+  text-align: left;
+}
 /* global css ends */
 
 /* banner section starts */
@@ -172,17 +174,50 @@ header .banner{
   border-radius: 5px;
   background: rgb(255, 244, 214);
 }
-.cards .card1 p{
+.cards .card1 p,
+.cards .card2 p,
+.cards .card3 p {
   text-align: left;
 }
-.cards .card2 p{
-  text-align: left;
-  
+/* plan section ends */
+/* column section starts */
+.columns{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 60px;
+  padding: 90px 80px;
 }
-.cards .card3 p{
-  text-align: left;
+.columns .col{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 60px;
+}
+.col .text-container{
+  width: 420px;
+}
+.col .img-container1{
+  background: url('../images/donation1.jpg');
+  width: 450px;
+  height: 400px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 10px;
+}
+.col .img-container2{
+  background: url('../images/donation2.jpg');
+  width: 450px;
+  height: 400px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 10px;
+}
 
-}
+/* column section ends */
 
 
 
@@ -198,10 +233,19 @@ header .banner{
   *{
     font-size: 12px;
   }
+  .container{
+    width: 400px;
+  }
+  .heading{
+    font-size: 40px;
+    line-height: 60px;
+  }
   header{
     padding: 4rem 2rem;
 }
 /* header section ends */
+.amount-area input{
+  padding: 0px 5%;}
 .amount-selector{
   font-size: 25px;
 }
@@ -210,6 +254,25 @@ header .banner{
   flex-direction: column;
   margin: 20px;
 }
+/* plan section ends */
+
+.columns .col-1{
+  flex-direction: column-reverse;
+  gap: 20px;
+}
+.col .img-container1, .col .img-container2{
+  width: 80%;
+}
+.col .text-container{
+  padding: 40px;
+}
+.columns .col-2{
+  flex-direction: column;
+  gap: 20px;
+}
+
+
+
 
 
 
@@ -223,11 +286,35 @@ header .banner{
     padding: 6rem 5rem;
 }
 /* header section ends */
+.amount-area input{
+  padding: 0px 16%;}
 .plan .cards{
   margin: 20px;
 }
 .cards .card1, .cards .card2, .cards .card3{
   padding: 20px 10px;
 }
+/* plan section ends */
+.columns{
+  padding: 60px 30px;
+}
+.columns .col-1{
+  flex-direction: column-reverse;
+  gap: 20px;
+}
+.col .img-container1, .col .img-container2{
+  width: 100%;
+}
+.col .text-container{
+  padding: 20px;
+}
+.columns .col-2{
+  flex-direction: column;
+  gap: 20px;
+}
+
+
+
+
 
 }
