@@ -6,6 +6,11 @@
   padding: 0px;
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
+    
+  outline: 1px solid red;
+  outline-offset: -1px;
+
+
 }
 .container{
   max-width: 1140px;
@@ -30,9 +35,9 @@ text-align: left;
 }
 .heading{
   color: rgb(255, 255, 255);
-  font-size: 65px;
+  font-size: 4rem;
   font-weight: 700;
-  line-height: 79px;
+  line-height: 5rem;
   text-align: center;
   margin-bottom: 20px;
 }
@@ -277,28 +282,48 @@ footer p{
     font-size: 12px;
   }
   .container{
-    width: 400px;
+    width: 300px;
+  }
+  .title{
+    font-size: 28px;
   }
   .heading{
     font-size: 40px;
-    line-height: 60px;
+    line-height: 45px;
   }
   header{
-    padding: 4rem 2rem;
+    padding: 3rem 1rem;
 }
+  .banner{
+    transform: scale(.9);
+  }
 /* header section ends */
 .amount-area input{
-  padding: 0px 5%;}
+  padding: 0px 10%;
+}
+
 .amount-selector{
   font-size: 25px;
 }
+
 /* donation section ends */
+.amounts .amount-selector{
+  margin: -20px;
+  transform: scale(.8);
+}
 .plan .cards{
   flex-direction: column;
   margin: 20px;
 }
+.cards .card1, .cards .card2, .cards .card3{
+  padding: 30px 20px 20px;
+}
 /* plan section ends */
-
+.columns{
+  transform: scale(.6);
+  padding: 0px 0px;
+  margin: -340px auto;
+}
 .columns .col-1{
   flex-direction: column-reverse;
   gap: 20px;
@@ -319,12 +344,30 @@ footer p{
   justify-content: center;
   align-items: center;
 }
+.updates p{
+  width: 300px;
+}
 .updates .form-container{
-  padding: 30px 50px;
+  padding: 10% 8%;
+}
+.form-container form {
+  flex-direction: column;
+}
+.form-container form input[type="email"]{
+  padding: 10px 12px;
+  text-align: center;
+  border-radius: 5px 5px 0px 0px;
+}
+.form-container form input[type="button"]{
+  padding: 10px 12px;
+  border: none;
+  border-radius: 0px 0px 5px 5px;
+}
+footer h2 {
+  font-size: 28px;
 }
 /* updates section ends */
 }
-
 /* media query table devices */
 @media screen and (min-width: 576px) and (max-width: 1199px) {
   *{
@@ -361,4 +404,7 @@ footer p{
   gap: 20px;
 }
 /* column section ends */
+.updates .form-container{
+  padding: 50px;
+}
 }
